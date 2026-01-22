@@ -1,95 +1,262 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Privacy policy | Lyon Vannes et Raccords-Maroc</title>
     <meta
-      name="description"
-      content="Privacy policy for LYON VANNES ET RACCORDS-MAROC STE."
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <title>Privacy Policy</title>
+    <style>
+      :root {
+        --ink: #101418;
+        --muted: #4b5563;
+        --card: #f9f6f1;
+        --accent: #d97706;
+        --accent-2: #0f766e;
+        --line: #e4d9c8;
+        --shadow: 0 18px 45px rgba(16, 20, 24, 0.15);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        font-family: "Trebuchet MS", "Verdana", sans-serif;
+        background: radial-gradient(
+              circle at 20% 10%,
+              rgba(217, 119, 6, 0.18),
+              transparent 42%
+            ),
+            radial-gradient(
+              circle at 80% 0%,
+              rgba(15, 118, 110, 0.18),
+              transparent 45%
+            ),
+            linear-gradient(160deg, #f3efe6 0%, #f8f5ef 65%, #efe6d9 100%);
+        min-height: 100vh;
+      }
+
+      .page {
+        padding: 20px 18px 32px;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+        color: #fef3c7;
+        border-radius: 18px;
+        padding: 20px 20px 22px;
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto -30% -35% auto;
+        width: 220px;
+        height: 220px;
+        background: radial-gradient(
+          circle,
+          rgba(249, 246, 241, 0.35),
+          rgba(249, 246, 241, 0)
+        );
+      }
+
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 0.7rem;
+        font-weight: 700;
+      }
+
+      h1 {
+        font-family: "Georgia", "Times New Roman", serif;
+        font-size: 1.7rem;
+        margin: 6px 0 8px;
+      }
+
+      .hero p {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #fef9e6;
+      }
+
+      .badge-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .badge {
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 18px;
+        padding: 18px 18px 20px;
+        margin-top: 16px;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--line);
+      }
+
+      .card h2 {
+        font-family: "Georgia", "Times New Roman", serif;
+        margin: 0 0 8px;
+        font-size: 1.25rem;
+        color: var(--accent-2);
+      }
+
+      .card p {
+        margin: 0 0 10px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
+      .list {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .callout {
+        border-left: 4px solid var(--accent);
+        padding: 10px 12px;
+        background: #fff8ed;
+        border-radius: 10px;
+      }
+
+      .contact {
+        display: grid;
+        gap: 8px;
+        background: #fff;
+        padding: 12px;
+        border-radius: 12px;
+        border: 1px solid var(--line);
+      }
+
+      .contact strong {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent-2);
+      }
+
+      .footer {
+        margin-top: 18px;
+        font-size: 0.8rem;
+        color: #6b7280;
+        text-align: center;
+      }
+
+      @media (min-width: 600px) {
+        .page {
+          max-width: 720px;
+          margin: 0 auto;
+          padding: 28px 24px 40px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="ambient">
-      <span class="orb orb-1"></span>
-      <span class="orb orb-2"></span>
-      <span class="orb orb-3"></span>
-      <span class="grid"></span>
+    <div class="page">
+      <section class="hero">
+        <div class="eyebrow">Privacy policy</div>
+        <h1>Lyon Vannes</h1>
+        <p>
+          Clear, simple, no data collection. This app runs offline and keeps
+          everything on your device.
+        </p>
+        <div class="badge-row">
+          <div class="badge">No permissions</div>
+          <div class="badge">No tracking</div>
+          <div class="badge">No account</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Summary</h2>
+        <p>
+          Lyon Vannes is an offline reference app. We do not collect, store,
+          sell, or share personal data. We do not use ads, analytics, or
+          profiling. Any numbers you enter are used only to show results on
+          screen and are not saved or transmitted.
+        </p>
+        <div class="callout">
+          Last updated: January 2026
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>What we collect</h2>
+        <p>Nothing. The app works without accounts and without online services.</p>
+        <ul class="list">
+          <li>No personal data collection.</li>
+          <li>No usage analytics or tracking.</li>
+          <li>No advertising identifiers.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Device permissions</h2>
+        <p>
+          The app does not request sensitive permissions. If you choose to
+          contact us, open maps, or share content, your device handles that
+          action using the external app you select.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Data you enter</h2>
+        <p>
+          Any order sizes, quantities, or notes you type are processed locally
+          to display results. They are not stored, uploaded, or shared.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <div class="contact">
+          <div>
+            <strong>Company</strong>
+            <div>LYON VANNES ET RACCORDS-MAROC STE</div>
+          </div>
+          <div>
+            <strong>Email</strong>
+            <div>contactus@lyonvannesetraccords.org</div>
+          </div>
+          <div>
+            <strong>Phone</strong>
+            <div>+13232079824</div>
+          </div>
+          <div>
+            <strong>Address</strong>
+            <div>Parc Industriel N3 Oukacha, Casablanca 20580</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer">
+        We keep this policy short and readable. If you have questions, reach out
+        using the contact details above.
+      </div>
     </div>
-
-    <header class="topbar">
-      <div class="brand">
-        <span class="brand-mark">LYON</span>
-        <div class="brand-text">
-          <span>Lyon Vannes</span>
-          <span>et Raccords-Maroc</span>
-        </div>
-      </div>
-      <nav class="nav">
-        <a href="index.html#about">About</a>
-        <a href="index.html#activities">Activities</a>
-        <a href="index.html#legal">Legal profile</a>
-        <a href="index.html#contact">Contact</a>
-        <a class="nav-cta" href="privancy-policie.html">Privacy policy</a>
-      </nav>
-      <button class="menu-btn" aria-label="Open menu">Menu</button>
-    </header>
-
-    <main class="section">
-      <div class="section-title">
-        <p class="eyebrow">Privacy policy</p>
-        <h1>Privacy policy</h1>
-      </div>
-      <div class="grid-2">
-        <div>
-          <p>
-            This page outlines the principles for protecting information shared
-            with LYON VANNES ET RACCORDS-MAROC STE. It can be adapted to match
-            your internal practices or legal obligations.
-          </p>
-          <p>
-            Personal data collected through this site is used only to respond to
-            professional requests, follow up on projects, and improve the
-            quality of exchanges.
-          </p>
-          <a class="btn btn-outline" href="index.html">Back to the website</a>
-        </div>
-        <div class="info-panel">
-          <h3>Core principles</h3>
-          <div class="info-row">
-            <span>Transparency</span>
-            <span>Clear, limited use of information.</span>
-          </div>
-          <div class="info-row">
-            <span>Security</span>
-            <span>Protection against unauthorized access.</span>
-          </div>
-          <div class="info-row">
-            <span>Compliance</span>
-            <span>Alignment with applicable regulations.</span>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div>
-        <h3>Lyon Vannes et Raccords-Maroc</h3>
-        <p>Parc Industriel N 3 Oukacha - Casablanca 20580</p>
-      </div>
-      <div class="footer-links">
-        <a href="index.html">Back to the website</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
